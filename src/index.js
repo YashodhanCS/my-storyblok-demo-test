@@ -10,8 +10,11 @@ import Teaser from "./components/Teaser";
 import Grid from "./components/Grid";
 import Feature from "./components/Feature";
 
+console.log('Storyblok Token:', process.env.REACT_APP_STAGING_TOKEN); // Check if the token is undefined or incorrect
+
+
 storyblokInit({
-  accessToken: process.env.REACT_APP_PRODUCTION_TOKEN,
+  accessToken: process.env.REACT_APP_STAGING_TOKEN,
   use: [apiPlugin],
   components: {
     page: Page,
@@ -26,10 +29,13 @@ storyblokInit({
   }
 });
 
+
 const container = document.getElementById("app");
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
+
+    
     <App />
   </React.StrictMode>
 );
