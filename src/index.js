@@ -22,7 +22,7 @@ storyblokInit({
   apiOptions: {
     // for spaces located in the US or China:
     // region: "us" or "cn", // you need to specify the region
-    region: ''
+    region: 'eu'
   }
 });
 
