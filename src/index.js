@@ -11,7 +11,7 @@ import Grid from "./components/Grid";
 import Feature from "./components/Feature";
 
 storyblokInit({
-  accessToken: "0YUWPiqX6W1DEikNkgfcbQtt",
+  accessToken: process.env.REACT_APP_PRODUCTION_TOKEN,
   use: [apiPlugin],
   components: {
     page: Page,
@@ -22,7 +22,7 @@ storyblokInit({
   apiOptions: {
     // for spaces located in the US or China:
     // region: "us" or "cn", // you need to specify the region
-    region: 'eu'
+    region: ''
   }
 });
 
