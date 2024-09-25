@@ -10,3 +10,5 @@ In the folder you have some files like:
 - `src/index.js`: the configuration with Storyblok API;
 - `src/App.js`: the initialization of the Storyblok Bridge.
 
+- New update 2
+
